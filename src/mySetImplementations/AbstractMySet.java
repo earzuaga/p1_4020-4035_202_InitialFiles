@@ -46,7 +46,7 @@ public abstract class AbstractMySet<E> implements MySet<E> {
 	}
 	
 	public Object[] toArray() { 
-		Object[] array = (E[]) new Object[this.size()]; 
+		Object[] array = new Object[this.size()]; 
 	    int i = 0;
 	    for (E e: this) {
 	        array[i] = e;
